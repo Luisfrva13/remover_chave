@@ -1,3 +1,4 @@
+import os
 
 print('')
 
@@ -10,6 +11,8 @@ pessoa = {
 }
 
 del pessoa[input('Informe o nome da chave ao ser deletada:')]
+
+os.system('cls')
 
 for chave in pessoa:
     print(f'{chave}: {pessoa.get(chave)}')
